@@ -35,10 +35,16 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
     border-radius: 10px 10px 0 0;
     overflow: hidden;
+    
 }
 .card-img img{
     width: 100%;
     border-radius: 10px 10px 0 0;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.cards:hover .card-img img{
+    transform: scale(0.9);
 }
 .card-body{
     padding: 20px 10px;
@@ -68,10 +74,9 @@ nav{
     width: 100%;
     background: #161c21;
 }
-.logo{
-    color: #fff;
-    font-size: 30px;
-
+.logo img{
+    width: 50px;
+    height: 100%;
 }
 .search-bar{
     background: rgb(235, 63, 63);
@@ -92,6 +97,46 @@ nav{
     width: 100%;
 }
 
+
+   /* main */
+
+   .slide-1 {
+    background: linear-gradient(90deg, rgba(210, 195, 240, 0.2), rgba(19, 91, 158, 0.1)), url(banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.slide-2 {
+    background: linear-gradient(90deg, rgba(210, 195, 240, 0.2), rgba(19, 91, 158, 0.1)), url(banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.slide-caption-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.slide-caption-1 p {
+    font-size: 1rem;
+}
+
+.main-slider .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 
 
 

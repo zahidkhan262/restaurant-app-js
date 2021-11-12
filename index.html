@@ -7,14 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant App || JS</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
+    <!-- owl-carousel css link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- owl-carousel js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- wow -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <script src="cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 
 <body>
 
     <nav class="d-flex-1">
         <div class="logo">
-            <p>Restaurant App</p>
+            <img src="logo1.png" alt="">
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Search recepis.." value="" id="search">
@@ -24,72 +41,56 @@
         </div>
 
     </nav>
-    <div class="restaurant-data">
-        <div class="row">
-            <div class="cards">
-                <div class="card-img">
-                    <img src="d.jpg" alt="">
-                </div>
-                <div class="card-body">
-                    <div class="info d-flex-1">
-                        <p>Item Name</p>
-                        <p>Item Price</p>
-                    </div>
-                    <div class="add-btn d-flex-1">
-                        <button class="btn-1">Add To Cart</button>
-                        <button class="btn-1">Rating__</button>
-                    </div>
+
+    <div class="main">
+        <div class="owl-carousel main-slider owl-theme">
+            <div class="slide-1">
+                <div class="slide-caption-1">
+                    <h1 class="wow animate__backInDown" style="animation-duration:2s; animation-delay:1s;">Custome
+                        Wide
+                        Body Kits</h1>
+                    <p>Lets us help you find what you need.</p>
                 </div>
             </div>
-            <div class="cards">
-                <div class="card-img">
-                    <img src="d.jpg" alt="">
-                </div>
-                <div class="card-body">
-                    <div class="info d-flex-1">
-                        <p>Item Name</p>
-                        <p>Item Price</p>
-                    </div>
-                    <div class="add-btn d-flex-1">
-                        <button class="btn-1">Add To Cart</button>
-                        <button class="btn-1">Rating__</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card-img">
-                    <img src="d.jpg" alt="">
-                </div>
-                <div class="card-body">
-                    <div class="info d-flex-1">
-                        <p>Item Name</p>
-                        <p>Item Price</p>
-                    </div>
-                    <div class="add-btn d-flex-1">
-                        <button class="btn-1">Add To Cart</button>
-                        <button class="btn-1">Rating__</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card-img">
-                    <img src="d.jpg" alt="">
-                </div>
-                <div class="card-body">
-                    <div class="info d-flex-1">
-                        <p>Item Name</p>
-                        <p>Item Price</p>
-                    </div>
-                    <div class="add-btn d-flex-1">
-                        <button class="btn-1">Add To Cart</button>
-                        <button class="btn-1">Rating__</button>
-                    </div>
+            <div class="slide-2">
+                <div class="slide-caption-1">
+                    <h1>Custome Wide Body Kits</h1>
+                    <p>Lets us help you find what you need.</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="restaurant-data">
+        <div class="row">
+        </div>
+    </div>
 
-
+    <script>
+        // main slider
+        $('.main-slider').owlCarousel({
+            loop: true,
+            autoplay: true,
+            responsiveClass: true,
+            dots: true,
+            margin: 10,
+            lazyLoad: true,
+            animateOut: 'fadeOut',
+            animateOut: 'slideOutDown',
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+        new WOW().init();
+    </script>
     <script src="app.js"></script>
 
 </body>

@@ -1,6 +1,5 @@
 var showResult = document.querySelector('.row');
 
-let searchQuery = '';
 let searchInput = '';
 
 const API_ID = '1d27559f';
@@ -45,7 +44,7 @@ function showDataHtml(results) {
                             </div>
                             <div class="add-btn d-flex-1">
                                 <button class="btn-1">Add To Cart</button>
-                                <button class="btn-1"><a href="${ele.recipe.uri}" target="_blank"></a>View</button>
+                                <button class="btn-1"><a href="${ele.recipe.url}" target="_blank"></a>View</button>
                             </div>
                         </div>
                     </div>
