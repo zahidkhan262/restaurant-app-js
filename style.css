@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.restaurant-data{
+    width: 95%;
+    margin: 10px auto;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cols-3{
+    width: 25%;
+    padding: 12px;
+}
+.d-flex-1{
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.d-flex-2{
+    display: flex;
+    align-items: center;
+}
+.cards{
+    flex-basis: 24%;
+    min-width: 280px;
+    margin: 10px 5px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card-body{
+    padding: 20px 10px;
+}
+.info{
+    color: #000;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.info p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+input,button{padding: 8px; border: none; outline: none;}
+.add-btn{
+    width: 100%;
+}
+.btn-1{
+    color: #fff;
+    background: #384bfc;
+    border-radius: 3px;
+}
+nav{
+    padding: 20px;
+    width: 100%;
+    background: #161c21;
+}
+.logo{
+    color: #fff;
+    font-size: 30px;
+
+}
+.search-bar{
+    background: rgb(235, 63, 63);
+    width: 50%;
+    position: relative;
+    border: 2px solid #384bfc;
+}
+.search-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px;
+    background: #384bfc;
+    color: #fff;
+}
+
+.search-bar input{
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media(max-width:780px){
+    .row{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .cards{
+        flex-basis: 29%;
+    }
+    .logo{font-size: 20px;}
+}
+
+@media(max-width:480px){
+    .row{
+        width: 100%;
+    }
+    .logo{font-size: 14px;}
+
+  .cards{
+      flex-basis: 45%;
+      min-width: 180px;
+      margin: 5px;
+  }
+}
