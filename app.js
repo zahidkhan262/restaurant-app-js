@@ -1,4 +1,4 @@
-var showResult = document.querySelector('.row');
+var showResult = document.getElementById('api_data');
 
 let searchInput = '';
 
@@ -52,6 +52,38 @@ function showDataHtml(results) {
     });
     showResult.innerHTML = bindData;
 }
+
+// slide image automatic
+
+var a = 1;
+
+function showImages() {
+
+    if (a == 1) {
+        document.getElementById('img1').src = 's4.png';
+        a = 2;
+    }
+    else if (a == 2) {
+        document.getElementById('img1').src = 's1.png';
+        a = 1;
+    }
+}
+setInterval('showImages()', 3000);
+var b = 1;
+
+function showImage2() {
+
+    if (b == 1) {
+        document.getElementById('img2').src = 's3.png';
+        b = 2;
+    }
+    else if (b == 2) {
+        document.getElementById('img2').src = 's2.png';
+        b = 1;
+    }
+}
+
+setInterval('showImage2()', 3000);
 
 
 

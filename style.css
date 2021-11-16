@@ -18,6 +18,15 @@
     width: 25%;
     padding: 12px;
 }
+.two-card{
+    margin: 10px 0;
+}
+.card-1{
+    flex-basis: 49%;
+    min-width: 300px;
+}
+.card-1 img{width: 100%;}
+
 .d-flex-1{
     display: flex;
      justify-content: space-between;
