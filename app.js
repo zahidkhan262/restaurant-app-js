@@ -60,11 +60,11 @@ var a = 1;
 function showImages() {
 
     if (a == 1) {
-        document.getElementById('img1').src = 's4.png';
+        document.getElementById('img1').src = 's1.png';
         a = 2;
     }
     else if (a == 2) {
-        document.getElementById('img1').src = 's1.png';
+        document.getElementById('img1').src = 's3.png';
         a = 1;
     }
 }
@@ -74,7 +74,7 @@ var b = 1;
 function showImage2() {
 
     if (b == 1) {
-        document.getElementById('img2').src = 's3.png';
+        document.getElementById('img2').src = 's4.png';
         b = 2;
     }
     else if (b == 2) {
