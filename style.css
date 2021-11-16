@@ -74,6 +74,7 @@ nav{
     width: 100%;
     background: #161c21;
 }
+.logo{color: #fff;}
 .logo img{
     width: 50px;
     height: 100%;
@@ -162,8 +163,6 @@ nav{
     .logo{font-size: 14px;}
 
   .cards{
-      flex-basis: 45%;
-      min-width: 180px;
       margin: 5px;
   }
 }
