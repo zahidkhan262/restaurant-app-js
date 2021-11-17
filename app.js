@@ -43,7 +43,7 @@ function showDataHtml(results) {
                                 <p>Calories: ${ele.recipe.calories.toFixed(0)}</p>
                             </div>
                             <div class="add-btn d-flex-1">
-                                <button class="btn-1">Add To Cart</button>
+                                <button class="btn-1 add_cart">Add To Cart</button>
                                 <button class="btn-1"><a href="${ele.recipe.url}" target="_blank"></a>View</button>
                             </div>
                         </div>
@@ -52,6 +52,16 @@ function showDataHtml(results) {
     });
     showResult.innerHTML = bindData;
 }
+
+
+
+
+
+
+
+
+
+
 
 // slide image automatic
 
