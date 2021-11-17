@@ -79,6 +79,8 @@ function showImages() {
     }
 }
 setInterval('showImages()', 3000);
+
+
 var b = 1;
 
 function showImage2() {
@@ -94,6 +96,36 @@ function showImage2() {
 }
 
 setInterval('showImage2()', 3000);
+var c = 1;
+
+function showImage3() {
+
+    if (c == 1) {
+        document.getElementById('img3').src = 's2.png';
+        c = 2;
+    }
+    else if (c == 2) {
+        document.getElementById('img3').src = 's4.png';
+        c = 1;
+    }
+}
+
+setInterval('showImage3()', 3000);
+var d = 1;
+
+function showImage4() {
+
+    if (d == 1) {
+        document.getElementById('img4').src = 's3.png';
+        d = 2;
+    }
+    else if (d == 2) {
+        document.getElementById('img4').src = 's1.png';
+        d = 1;
+    }
+}
+
+setInterval('showImage4()', 3000);
 
 
 
